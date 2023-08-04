@@ -1,10 +1,9 @@
 import React from 'react';
 import {Redirect, Route, Switch} from "react-router-dom";
 import {privatRoutes, publicRoutes} from "../routes";
-import {CHAT_ROUTE, LOGIN_ROUTE} from "../utils/consts";
+import {CHAT_ROUTE, LOGIN_ROUTE, user} from "../utils/consts";
 
 const AppRouter = () => {
-    const user = true;
     return user ?
         (
             <Switch>
